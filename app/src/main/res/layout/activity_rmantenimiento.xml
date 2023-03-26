@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#140761"
+    tools:context=".RMantenimiento">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="413dp"
+        android:layout_height="63dp"
+        android:background="#240CAD"
+        android:gravity="center"
+        android:text="TODOMOTOS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/TituloAgrMante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="176dp"
+        android:text="Agregar mantenimiento"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="684dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/motologo" />
+
+    <TextView
+        android:id="@+id/SelecMoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="Seleccione su moto:"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloAgrMante" />
+
+    <TextView
+        android:id="@+id/SelecMante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:text="Seleccione el mantenimiento realizado:"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelecMoto" />
+
+    <Button
+        android:id="@+id/btnAgreMante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="#000000"
+
+        android:text="Agregar MAntenimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelecMante" />
+
+    <Button
+        android:id="@+id/btnRegMantedos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:backgroundTint="#000000"
+        android:onClick="Regresar"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgreMante"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <EditText
+        android:id="@+id/textmotoselecion"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="103dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Seleccione su moto"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelecMoto" />
+
+    <EditText
+        android:id="@+id/textmantenimientoselect"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Ingrese el mantenimiento"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SelecMante" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#140761"
+    tools:context=".RegistroMoto">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="413dp"
+        android:layout_height="63dp"
+        android:background="#240CAD"
+        android:gravity="center"
+        android:text="TODOMOTOS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="684dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/motologo" />
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="669dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TituloRegistroM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:text="Registro de moto"
+                android:textColor="#FBFBFB"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <EditText
+                android:id="@+id/MarcamotoRM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="src_atop"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Marca de moto"
+
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TituloRegistroM" />
+
+            <EditText
+                android:id="@+id/ReferenciamotoRM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Referencia de moto"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MarcamotoRM" />
+
+            <EditText
+                android:id="@+id/PlacamotoRM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Placa moto"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ModelomotoRM" />
+
+            <EditText
+                android:id="@+id/ModelomotoRM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#FBFAFA"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Modelo de la moto"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ReferenciamotoRM" />
+
+            <EditText
+                android:id="@+id/KilometrajeRM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="102dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Kilometraje"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PlacamotoRM" />
+
+            <EditText
+                android:id="@+id/FechasoatRM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="103dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Fecha de SOAT"
+                android:inputType="date"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/KilometrajeRM" />
+
+            <EditText
+                android:id="@+id/FechatecnoRM"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Fecha de Tecnomecánica"
+                android:inputType="date"
+                android:textColor="#FFFEFE"
+                android:textColorHint="#FDFDFD"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FechasoatRM" />
+
+            <Button
+                android:id="@+id/btnRegistrarMoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="#000000"
+                android:text="Registrar moto"
+                app:layout_constraintEnd_toEndOf="@id/btnPerfiluno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPerfiluno" />
+
+            <Button
+                android:id="@+id/btnCancelarRMoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:backgroundTint="#000000"
+                android:text="Cancelar"
+                app:layout_constraintEnd_toEndOf="@id/btnPerfiluno"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPerfiluno" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
